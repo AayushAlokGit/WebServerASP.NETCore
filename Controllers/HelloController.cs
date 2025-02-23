@@ -17,6 +17,7 @@ public class HelloController : ControllerBase
     [HttpGet]
     public string Hello()
     {
+        this._logger.LogInformation("This is an info log");
         return "Hello from server";
     }
 }
